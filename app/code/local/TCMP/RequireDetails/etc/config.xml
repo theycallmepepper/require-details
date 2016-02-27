@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TCMP_RequireDetails>
+            <version>0.1.0</version>
+        </TCMP_RequireDetails>
+    </modules>
+    <global>
+        <blocks>
+            <tcmp_requiredetails>
+                <class>TCMP_RequireDetails_Block</class>
+            </tcmp_requiredetails>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_create_form_account>TCMP_RequireDetails_Block_Account</sales_order_create_form_account>
+                </rewrite>
+             </adminhtml>
+        </blocks>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <requireemail>
+                    <file>tcmp/creditmemo_comment.xml</file>
+                </requireemail>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

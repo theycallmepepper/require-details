@@ -1,0 +1,9 @@
+<layout>
+    <adminhtml_sales_order_creditmemo_new>
+        <reference name="order_items">
+            <action method="setTemplate">
+                <template>tcmp/sales/order/creditmemo/create/items.phtml</template>
+            </action>
+        </reference>
+    </adminhtml_sales_order_creditmemo_new>
+</layout>
